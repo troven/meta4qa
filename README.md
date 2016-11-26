@@ -1,6 +1,6 @@
 ![meta4qa](docs/favicon.png) ![CI](https://travis-ci.org/meta4qa/meta4qa.svg?branch=master) ![version](https://img.shields.io/github/release/meta4qa/meta4qa.svg?maxAge=2592000) ![dependencies](https://img.shields.io/david/meta4qa/meta4qa.svg?maxAge=2592000) ![meta4qas](https://img.shields.io/badge/meta4qas-are%20awesome-800080.svg)
 
-Executable English for Test Teams
+BDD / Gherkin Governance tool for QA engineers
 =================================
 
 meta4qa is an BDD test automation and orchestration tool for software teams. 
