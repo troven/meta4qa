@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Web API - meta4qa</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/img/logo.png" title="meta4qa" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>Dialect Definitions for: 1.2.1</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Phrases</a></li>
+                            <li><a href="#api-modules">Dialects</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Builder.html">Builder</a></li>
+                                <li><a href="../classes/Common.html">Common</a></li>
+                                <li><a href="../classes/Events.html">Events</a></li>
+                                <li><a href="../classes/File System.html">File System</a></li>
+                                <li><a href="../classes/TCP Toolkit.html">TCP Toolkit</a></li>
+                                <li><a href="../classes/Transform.html">Transform</a></li>
+                                <li><a href="../classes/Variables.html">Variables</a></li>
+                                <li><a href="../classes/Web API.html">Web API</a></li>
+                                <li><a href="../classes/X.509 Server Certificates.html">X.509 Server Certificates</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/Default Dialect.html">Default Dialect</a></li>
+                                <li><a href="../modules/Web API Dialect.html">Web API Dialect</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Web API Phrases</h1>
+<div class="box meta">
+
+
+        <div class="foundat">
+            Defined in: <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l14"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:14</code></a>
+        </div>
+
+            Dialect: <a href="../modules/Web API Dialect.html">Web API Dialect</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Web API
+Configures the Yadda parser with phrases that support operations on HTTP APIs</p>
+
+</div>
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                            <li class="index-item method">
+                                <a href="#method_Disable HTTP GZIP compression">Disable HTTP GZIP compression</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Disable HTTP keep alive">Disable HTTP keep alive</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Enable HTTP GZIP compression">Enable HTTP GZIP compression</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Enable HTTP keep alive">Enable HTTP keep alive</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Extract variable from a JSON response">Extract variable from a JSON response</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Extract variable from an HTTP header">Extract variable from an HTTP header</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Send HTTP DELETE request">Send HTTP DELETE request</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Send HTTP GET request">Send HTTP GET request</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Send HTTP HEAD request">Send HTTP HEAD request</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Send HTTP PATCH request">Send HTTP PATCH request</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Send HTTP POST request">Send HTTP POST request</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Send HTTP PUT request">Send HTTP PUT request</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Send request for HTTP OPTIONS">Send request for HTTP OPTIONS</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set access_token">Set access_token</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set HTTP Request Header">Set HTTP Request Header</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set HTTP Request Header">Set HTTP Request Header</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set HTTP Request Parameter">Set HTTP Request Parameter</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set HTTP response">Set HTTP response</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set HTTP response">Set HTTP response</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set HTTP response">Set HTTP response</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set HTTP response">Set HTTP response</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set HTTP response">Set HTTP response</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set HTTP timeout">Set HTTP timeout</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set named cookies">Set named cookies</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Use Client Certificate">Use Client Certificate</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Use Client Credentials to authenticate">Use Client Credentials to authenticate</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Use Client Credentials to authenticate as default agent">Use Client Credentials to authenticate as default agent</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method_Disable HTTP GZIP compression" class="method item">
+    <h3 class="name"><code>Disable HTTP GZIP compression</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l306"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:306</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Disable HTTP GZIP compression</p>
+<pre class="code prettyprint"><code>I disable gzip</code></pre>
+
+    </div>
+
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>GIVEN I disable gzip</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Disable HTTP keep alive" class="method item">
+    <h3 class="name"><code>Disable HTTP keep alive</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l271"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:271</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Disable HTTP keep-alive</p>
+<pre class="code prettyprint"><code>I disable keep-alive</code></pre>
+
+    </div>
+
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>GIVEN I disable keep-alive</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Enable HTTP GZIP compression" class="method item">
+    <h3 class="name"><code>Enable HTTP GZIP compression</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l289"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:289</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Enable HTTP GZIP compression</p>
+<pre class="code prettyprint"><code>I enable gzip</code></pre>
+
+    </div>
+
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>GIVEN I enable gzip</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Enable HTTP keep alive" class="method item">
+    <h3 class="name"><code>Enable HTTP keep alive</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l254"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:254</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Enable HTTP keep-alive</p>
+<pre class="code prettyprint"><code>I enable keep-alive</code></pre>
+
+    </div>
+
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>GIVEN I enable keep-alive</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Extract variable from a JSON response" class="method item">
+    <h3 class="name"><code>Extract variable from a JSON response</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>path</code>
+                </li>
+                <li class="arg">
+                        <code>name</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l732"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:732</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Extra a value from the (JSON) body and store as a scoped variable</p>
+<pre class="code prettyprint"><code>I store body path $path as $name</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">path</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>JSON Path to extract variable</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>scoped variable to store result</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I store body path $.access_token as access-token</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Extract variable from an HTTP header" class="method item">
+    <h3 class="name"><code>Extract variable from an HTTP header</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>header</code>
+                </li>
+                <li class="arg">
+                        <code>name</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l753"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:753</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Extract avalue from HTTP header and store as a scoped variable</p>
+<pre class="code prettyprint"><code>I store header $header as $name</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">header</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>name of header to extract</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>scoped variable to store result</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I store header ApiKey as client_id</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Send HTTP DELETE request" class="method item">
+    <h3 class="name"><code>Send HTTP DELETE request</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>resource</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l627"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:627</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Issue an HTTP DELETE request to default target or an absolute URL.
+The @target annotation is used to select a target</p>
+<pre class="code prettyprint"><code>I DELETE $resource</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">resource</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>target resource path or full URL</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I DELETE /
+I DELETE http://example.com</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Send HTTP GET request" class="method item">
+    <h3 class="name"><code>Send HTTP GET request</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>resource</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l555"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:555</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Issue an HTTP GET request to default target or an absolute URL.
+The @target annotation is used to select a target</p>
+<pre class="code prettyprint"><code>I GET $resource</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">resource</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>target resource path or full URL</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I GET /
+I GET http://example.com</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Send HTTP HEAD request" class="method item">
+    <h3 class="name"><code>Send HTTP HEAD request</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>resource</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l671"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:671</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Issue an HTTP HEAD request to default target or an absolute URL.
+The @target annotation is used to select a target</p>
+<pre class="code prettyprint"><code>I request HEAD for $resource</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">resource</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>target resource path or full URL</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I request HEAD for /
+I request HEAD for http://example.com</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Send HTTP PATCH request" class="method item">
+    <h3 class="name"><code>Send HTTP PATCH request</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>resource</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l652"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:652</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Issue an HTTP PATCH request to default target or an absolute URL.
+The @target annotation is used to select a target</p>
+<pre class="code prettyprint"><code>I PATCH $resource</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">resource</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>target resource path or full URL</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I PATCH /
+I PATCH http://example.com</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Send HTTP POST request" class="method item">
+    <h3 class="name"><code>Send HTTP POST request</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>resource</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l587"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:587</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Issue an HTTP POST request to default target or an absolute URL.
+The @target annotation is used to select a target</p>
+<pre class="code prettyprint"><code>I POST $resource</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">resource</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>target resource path or full URL</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I POST /
+I POST http://example.com</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Send HTTP PUT request" class="method item">
+    <h3 class="name"><code>Send HTTP PUT request</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>resource</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l607"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:607</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Issue an HTTP PUT request to default target or an absolute URL.
+The @target annotation is used to select a target</p>
+<pre class="code prettyprint"><code>I PUT $resource</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">resource</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>target resource path or full URL</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I PUT /
+I PUT http://example.com</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Send request for HTTP OPTIONS" class="method item">
+    <h3 class="name"><code>Send request for HTTP OPTIONS</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>resource</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l691"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:691</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Issue an HTTP POST request to default target or an absolute URL.
+The @target annotation is used to select a target</p>
+<pre class="code prettyprint"><code>I request OPTIONS for $resource</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">resource</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>target resource path or full URL</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I request OPTIONS for /
+I request OPTIONS for  http://example.com</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set access_token" class="method item">
+    <h3 class="name"><code>Set access_token</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>token</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l711"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:711</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set an OAUTH access_token both as scoped variable for use in subsequent requests.
+The $path parameter is a JSON path used to access the (non-standard) access_token from the current HTTP response.</p>
+<pre class="code prettyprint"><code>I store body path $path as access token</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">token</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>valid oauth access token</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I store body path $.access_token as access token</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set HTTP Request Header" class="method item">
+    <h3 class="name"><code>Set HTTP Request Header</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+                <li class="arg">
+                        <code>varname</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l78"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:78</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set an HTTP Header from a variable</p>
+<pre class="code prettyprint"><code> I set $header header from $varname</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>header name</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">varname</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>a scoped variable name</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> I set test = 123
+ I set header x-my-header from test</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set HTTP Request Header" class="method item">
+    <h3 class="name"><code>Set HTTP Request Header</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l57"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:57</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set an HTTP Header to a value</p>
+<pre class="code prettyprint"><code> I set $header header to $value
+
+ I set header $header = $value</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>header name</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>header value</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> I set header Accept to application/json</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set HTTP Request Parameter" class="method item">
+    <h3 class="name"><code>Set HTTP Request Parameter</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l99"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:99</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Add an HTTP Query Parameter to the Request</p>
+<pre class="code prettyprint"><code> I set parameter $key to $value
+
+ I set $key parameter to $value
+
+ I set $key param to $value
+
+ I set param $key to $value</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>query parameter name</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>query parameter value</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> I set parameter api_key to ABCD1234</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set HTTP response" class="method item">
+    <h3 class="name"><code>Set HTTP response</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>payload</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l385"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:385</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set HTTP response to payload. Objects are sent as JSON, everything else as BODY text.</p>
+<pre class="code prettyprint"><code>I set body to $payload</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">payload</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>JSON or text payload</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I set body to hello world</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set HTTP response" class="method item">
+    <h3 class="name"><code>Set HTTP response</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>payload</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l433"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:433</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set HTTP response to CSV payload.</p>
+<pre class="code prettyprint"><code>I set body to CSV:
+------------
+$CSV
+------------
+
+I send CSV:
+------------
+$CSV
+------------</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">payload</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>JSON or text payload</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I set body to CSV:
+------------
+what, who
+hello, world
+------------</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set HTTP response" class="method item">
+    <h3 class="name"><code>Set HTTP response</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>payload</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l463"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:463</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set HTTP response to JSON payload.</p>
+<pre class="code prettyprint"><code>I set body to JSON:
+------------
+$JSON
+------------
+
+I send JSON:
+------------
+$JSON
+------------</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">payload</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>JSON or text payload</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I set body to JSON:
+------------
+{ &quot;what&quot;: &quot;hello&quot;, &quot;who&quot;: &quot;world&quot; }
+------------</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set HTTP response" class="method item">
+    <h3 class="name"><code>Set HTTP response</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>payload</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l493"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:493</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set HTTP response to JSON payload.</p>
+<pre class="code prettyprint"><code>I set body to JSON:
+------------
+$JSON
+------------
+
+I send JSON:
+------------
+$JSON
+------------</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">payload</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>JSON or text payload</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I set body to JSON:
+------------
+{ &quot;what&quot;: &quot;hello&quot;, &quot;who&quot;: &quot;world&quot; }
+------------</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set HTTP response" class="method item">
+    <h3 class="name"><code>Set HTTP response</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>text</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l526"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:526</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set HTTP response to raw (text) payload.</p>
+<pre class="code prettyprint"><code>I set body to:
+------------
+$TEXT
+------------
+
+I send:
+------------
+$TEXT
+------------</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">text</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>payload</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I set body to:
+------------
+Hello World
+------------</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set HTTP timeout" class="method item">
+    <h3 class="name"><code>Set HTTP timeout</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>timeout</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l235"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:235</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set a named HTTP timeout to a time in milliseconds</p>
+<pre class="code prettyprint"><code>I set request timeout to $time</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">timeout</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>duration in milliseconds</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>GIVEN I set request timeout to 3000</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set named cookies" class="method item">
+    <h3 class="name"><code>Set named cookies</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l213"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:213</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set a named HTTP cookie to value</p>
+<pre class="code prettyprint"><code>I set cookie $cookie to $value
+
+I set cookie $cookie = $value</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>cookie name</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>cookie value</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code>I set cookie my-tag = abc-1234</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Use Client Certificate" class="method item">
+    <h3 class="name"><code>Use Client Certificate</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>cert</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l30"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:30</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Add a client certificate to an HTTP request.
+The certificate itself is defined in the config.json file.</p>
+<pre class="code prettyprint"><code> I use a $CERT client certificate
+
+ I use an $CERT client certificate</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">cert</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>certificate name</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> I use a valid client certificate</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Use Client Credentials to authenticate" class="method item">
+    <h3 class="name"><code>Use Client Credentials to authenticate</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>agent</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l184"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:184</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Use OAUTH flow to authenticate using a named agent</p>
+<pre class="code prettyprint"><code> I use OAuth2 credentials as $agent
+
+ I use oauth credentials as $agent
+
+ I use client-credentials as $agent</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">agent</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>named agent</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> I use client-credentials as default</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Use Client Credentials to authenticate as default agent" class="method item">
+    <h3 class="name"><code>Use Client Credentials to authenticate as default agent</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-webapi_lib_dialect_webapi.js.html#l151"><code>node_modules&#x2F;meta4qa-webapi&#x2F;lib&#x2F;dialect&#x2F;webapi.js:151</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Use OAUTH flow to authenticate using default agent</p>
+<pre class="code prettyprint"><code> I use OAuth2
+
+ I use oauth</code></pre>
+
+    </div>
+
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> I use oauth</code></pre>
+
+            </div>
+        </div>
+</div>
+            </div>
+
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

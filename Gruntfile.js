@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                 url: '<%= pkg.homepage %>',
                 options: {
                     themedir: "themes/yuidoc/dialect",
-                    paths: ['lib/', "dialects/webapi/lib/", "dialects/webapp/lib/", "dialects/blueprint/lib/"],
+                    paths: ['lib/', "node_modules/meta4qa-webapi/lib/", "node_modules/meta4qa-browser/lib/", "node_modules/meta4qa-common/lib/"],
                     outdir: 'docs/js/'
                 }
             }

@@ -1,0 +1,1231 @@
+{
+    "project": {
+        "name": "meta4qa",
+        "description": "Common runtime for meta4qa",
+        "version": "1.2.1",
+        "url": ""
+    },
+    "files": {
+        "lib/helpers/http.js": {
+            "name": "lib/helpers/http.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/reporters/Simple.js": {
+            "name": "lib/reporters/Simple.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "lib/meta4qa.js": {
+            "name": "lib/meta4qa.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/meta4qa-webapi/lib/dialect/certs.js": {
+            "name": "node_modules/meta4qa-webapi/lib/dialect/certs.js",
+            "modules": {
+                "Web API Dialect": 1
+            },
+            "classes": {
+                "X.509 Server Certificates": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/meta4qa-webapi/lib/dialect/tcp.js": {
+            "name": "node_modules/meta4qa-webapi/lib/dialect/tcp.js",
+            "modules": {},
+            "classes": {
+                "TCP Toolkit": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/meta4qa-webapi/lib/dialect/webapi.js": {
+            "name": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "modules": {},
+            "classes": {
+                "Web API": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/meta4qa-common/lib/dialect/builder.js": {
+            "name": "node_modules/meta4qa-common/lib/dialect/builder.js",
+            "modules": {
+                "Default Dialect": 1
+            },
+            "classes": {
+                "Builder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/meta4qa-common/lib/dialect/common.js": {
+            "name": "node_modules/meta4qa-common/lib/dialect/common.js",
+            "modules": {},
+            "classes": {
+                "Common": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/meta4qa-common/lib/dialect/events.js": {
+            "name": "node_modules/meta4qa-common/lib/dialect/events.js",
+            "modules": {},
+            "classes": {
+                "Events": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/meta4qa-common/lib/dialect/filesystem.js": {
+            "name": "node_modules/meta4qa-common/lib/dialect/filesystem.js",
+            "modules": {},
+            "classes": {
+                "File System": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/meta4qa-common/lib/dialect/transform.js": {
+            "name": "node_modules/meta4qa-common/lib/dialect/transform.js",
+            "modules": {},
+            "classes": {
+                "Transform": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/meta4qa-common/lib/dialect/variables.js": {
+            "name": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "modules": {},
+            "classes": {
+                "Variables": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "Web API Dialect": {
+            "name": "Web API Dialect",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "X.509 Server Certificates": 1,
+                "TCP Toolkit": 1,
+                "Web API": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 14,
+            "description": "X.509 Server Certificates\nConfigures the Yadda parser with phrases that support operations on HTTP Server Certificates"
+        },
+        "Default Dialect": {
+            "name": "Default Dialect",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "Builder": 1,
+                "Common": 1,
+                "Events": 1,
+                "File System": 1,
+                "Transform": 1,
+                "Variables": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 14,
+            "description": "Builder\nConfigures the Gherkin parser with phrases that support generating software assets"
+        }
+    },
+    "classes": {
+        "X.509 Server Certificates": {
+            "name": "X.509 Server Certificates",
+            "shortname": "X.509 Server Certificates",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Web API Dialect",
+            "namespace": "",
+            "file": "node_modules/meta4qa-webapi/lib/dialect/certs.js",
+            "line": 10,
+            "description": "X.509 Server Certificates\nConfigures the Yadda parser with phrases that support operations on HTTP Server Certificates"
+        },
+        "TCP Toolkit": {
+            "name": "TCP Toolkit",
+            "shortname": "TCP Toolkit",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Web API Dialect",
+            "namespace": "",
+            "file": "node_modules/meta4qa-webapi/lib/dialect/tcp.js",
+            "line": 10,
+            "description": "TCP Network Toolkit\nConfigures the Yadda parser with phrases that support operations on HTTP APIs"
+        },
+        "Web API": {
+            "name": "Web API",
+            "shortname": "Web API",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Web API Dialect",
+            "namespace": "",
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 14,
+            "description": "Web API\nConfigures the Yadda parser with phrases that support operations on HTTP APIs"
+        },
+        "Builder": {
+            "name": "Builder",
+            "shortname": "Builder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Default Dialect",
+            "namespace": "",
+            "file": "node_modules/meta4qa-common/lib/dialect/builder.js",
+            "line": 15,
+            "description": "Builder\nConfigures the Gherkin parser with phrases that support generating software assets"
+        },
+        "Common": {
+            "name": "Common",
+            "shortname": "Common",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Default Dialect",
+            "namespace": "",
+            "file": "node_modules/meta4qa-common/lib/dialect/common.js",
+            "line": 15,
+            "description": "Useful\nConfigures the Gherkin parser with phrases that support common, useful operations"
+        },
+        "Events": {
+            "name": "Events",
+            "shortname": "Events",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Default Dialect",
+            "namespace": "",
+            "file": "node_modules/meta4qa-common/lib/dialect/events.js",
+            "line": 14,
+            "description": "Events Dialect\ntransmits events to apigee"
+        },
+        "File System": {
+            "name": "File System",
+            "shortname": "File System",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Default Dialect",
+            "namespace": "",
+            "file": "node_modules/meta4qa-common/lib/dialect/filesystem.js",
+            "line": 14,
+            "description": "File System\nConfigures the Gherkin parser with phrases that support operations on File System"
+        },
+        "Transform": {
+            "name": "Transform",
+            "shortname": "Transform",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Default Dialect",
+            "namespace": "",
+            "file": "node_modules/meta4qa-common/lib/dialect/transform.js",
+            "line": 16,
+            "description": "Useful\nConfigures the Gherkin parser with phrases that support simple (map/reduce) style data transformations"
+        },
+        "Variables": {
+            "name": "Variables",
+            "shortname": "Variables",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Default Dialect",
+            "namespace": "",
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 14,
+            "description": "Variables\nConfigures the Gherkin parser with phrases that support operations on variables"
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "lib/helpers/http.js",
+            "line": 237,
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "X.509 Server Certificates"
+        },
+        {
+            "file": "lib/reporters/Simple.js",
+            "line": 9,
+            "description": "Initialize a new `JSON` reporter.",
+            "api": "public",
+            "params": [
+                {
+                    "name": "runner",
+                    "description": "",
+                    "type": "Runner"
+                }
+            ],
+            "class": "X.509 Server Certificates"
+        },
+        {
+            "file": "lib/reporters/Simple.js",
+            "line": 73,
+            "description": "Return a plain-object representation of `test`\nfree of cyclic properties etc.",
+            "api": "private",
+            "params": [
+                {
+                    "name": "test",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "X.509 Server Certificates"
+        },
+        {
+            "file": "lib/meta4qa.js",
+            "line": 3,
+            "description": "meta4qa\n\nCommand Line launcher\n\n(c) Troven Software 2009-2015. Apache Licensed.",
+            "class": "X.509 Server Certificates"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 30,
+            "description": "Add a client certificate to an HTTP request.\nThe certificate itself is defined in the config.json file.\n\n     I use a $CERT client certificate\n\n     I use an $CERT client certificate",
+            "example": [
+                "\n\n     I use a valid client certificate"
+            ],
+            "itemtype": "method",
+            "name": "Use Client Certificate",
+            "params": [
+                {
+                    "name": "cert",
+                    "description": "- certificate name",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 57,
+            "description": "Set an HTTP Header to a value\n\n     I set $header header to $value\n\n     I set header $header = $value",
+            "example": [
+                "\n\n     I set header Accept to application/json"
+            ],
+            "itemtype": "method",
+            "name": "Set HTTP Request Header",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "- header name",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "- header value",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 78,
+            "description": "Set an HTTP Header from a variable\n\n     I set $header header from $varname",
+            "example": [
+                "\n\n     I set test = 123\n     I set header x-my-header from test"
+            ],
+            "itemtype": "method",
+            "name": "Set HTTP Request Header",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "- header name",
+                    "type": "String"
+                },
+                {
+                    "name": "varname",
+                    "description": "- a scoped variable name",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 99,
+            "description": "Add an HTTP Query Parameter to the Request\n\n     I set parameter $key to $value\n\n     I set $key parameter to $value\n\n     I set $key param to $value\n\n     I set param $key to $value",
+            "example": [
+                "\n\n     I set parameter api_key to ABCD1234"
+            ],
+            "itemtype": "method",
+            "name": "Set HTTP Request Parameter",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "- query parameter name",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "- query parameter value",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 151,
+            "description": "Use OAUTH flow to authenticate using default agent\n\n     I use OAuth2\n\n     I use oauth",
+            "example": [
+                "\n\n     I use oauth"
+            ],
+            "itemtype": "method",
+            "name": "Use Client Credentials to authenticate as default agent",
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 184,
+            "description": "Use OAUTH flow to authenticate using a named agent\n\n     I use OAuth2 credentials as $agent\n\n     I use oauth credentials as $agent\n\n     I use client-credentials as $agent",
+            "example": [
+                "\n\n     I use client-credentials as default"
+            ],
+            "itemtype": "method",
+            "name": "Use Client Credentials to authenticate",
+            "params": [
+                {
+                    "name": "agent",
+                    "description": "- named agent",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 213,
+            "description": "Set a named HTTP cookie to value\n\n    I set cookie $cookie to $value\n\n    I set cookie $cookie = $value",
+            "example": [
+                "\n\n    I set cookie my-tag = abc-1234"
+            ],
+            "itemtype": "method",
+            "name": "Set named cookies",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "- cookie name",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "- cookie value",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 235,
+            "description": "Set a named HTTP timeout to a time in milliseconds\n\n    I set request timeout to $time",
+            "example": [
+                "\n\n    GIVEN I set request timeout to 3000"
+            ],
+            "itemtype": "method",
+            "name": "Set HTTP timeout",
+            "params": [
+                {
+                    "name": "timeout",
+                    "description": "- duration in milliseconds",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 254,
+            "description": "Enable HTTP keep-alive\n\n    I enable keep-alive",
+            "example": [
+                "\n\n    GIVEN I enable keep-alive"
+            ],
+            "itemtype": "method",
+            "name": "Enable HTTP keep alive",
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 271,
+            "description": "Disable HTTP keep-alive\n\n    I disable keep-alive",
+            "example": [
+                "\n\n    GIVEN I disable keep-alive"
+            ],
+            "itemtype": "method",
+            "name": "Disable HTTP keep alive",
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 289,
+            "description": "Enable HTTP GZIP compression\n\n    I enable gzip",
+            "example": [
+                "\n\n    GIVEN I enable gzip"
+            ],
+            "itemtype": "method",
+            "name": "Enable HTTP GZIP compression",
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 306,
+            "description": "Disable HTTP GZIP compression\n\n    I disable gzip",
+            "example": [
+                "\n\n    GIVEN I disable gzip"
+            ],
+            "itemtype": "method",
+            "name": "Disable HTTP GZIP compression",
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 385,
+            "description": "Set HTTP response to payload. Objects are sent as JSON, everything else as BODY text.\n\n    I set body to $payload",
+            "example": [
+                "\n\n    I set body to hello world"
+            ],
+            "itemtype": "method",
+            "name": "Set HTTP response",
+            "params": [
+                {
+                    "name": "payload",
+                    "description": "- JSON or text payload",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 433,
+            "description": "Set HTTP response to CSV payload.\n\n    I set body to CSV:\n    ------------\n    $CSV\n    ------------\n\n    I send CSV:\n    ------------\n    $CSV\n    ------------",
+            "example": [
+                "\n\n    I set body to CSV:\n    ------------\n    what, who\n    hello, world\n    ------------"
+            ],
+            "itemtype": "method",
+            "name": "Set HTTP response",
+            "params": [
+                {
+                    "name": "payload",
+                    "description": "- JSON or text payload",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 463,
+            "description": "Set HTTP response to JSON payload.\n\n    I set body to JSON:\n    ------------\n    $JSON\n    ------------\n\n    I send JSON:\n    ------------\n    $JSON\n    ------------",
+            "example": [
+                "\n\n    I set body to JSON:\n    ------------\n    { \"what\": \"hello\", \"who\": \"world\" }\n    ------------"
+            ],
+            "itemtype": "method",
+            "name": "Set HTTP response",
+            "params": [
+                {
+                    "name": "payload",
+                    "description": "- JSON or text payload",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 493,
+            "description": "Set HTTP response to JSON payload.\n\n    I set body to JSON:\n    ------------\n    $JSON\n    ------------\n\n    I send JSON:\n    ------------\n    $JSON\n    ------------",
+            "example": [
+                "\n\n    I set body to JSON:\n    ------------\n    { \"what\": \"hello\", \"who\": \"world\" }\n    ------------"
+            ],
+            "itemtype": "method",
+            "name": "Set HTTP response",
+            "params": [
+                {
+                    "name": "payload",
+                    "description": "- JSON or text payload",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 526,
+            "description": "Set HTTP response to raw (text) payload.\n\n    I set body to:\n    ------------\n    $TEXT\n    ------------\n\n    I send:\n    ------------\n    $TEXT\n    ------------",
+            "example": [
+                "\n\n    I set body to:\n    ------------\n    Hello World\n    ------------"
+            ],
+            "itemtype": "method",
+            "name": "Set HTTP response",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "payload",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 555,
+            "description": "Issue an HTTP GET request to default target or an absolute URL.\nThe @target annotation is used to select a target\n\n    I GET $resource",
+            "example": [
+                "\n\n    I GET /\n    I GET http://example.com"
+            ],
+            "itemtype": "method",
+            "name": "Send HTTP GET request",
+            "params": [
+                {
+                    "name": "resource",
+                    "description": "- target resource path or full URL",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 587,
+            "description": "Issue an HTTP POST request to default target or an absolute URL.\nThe @target annotation is used to select a target\n\n    I POST $resource",
+            "example": [
+                "\n\n    I POST /\n    I POST http://example.com"
+            ],
+            "itemtype": "method",
+            "name": "Send HTTP POST request",
+            "params": [
+                {
+                    "name": "resource",
+                    "description": "- target resource path or full URL",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 607,
+            "description": "Issue an HTTP PUT request to default target or an absolute URL.\nThe @target annotation is used to select a target\n\n    I PUT $resource",
+            "example": [
+                "\n\n    I PUT /\n    I PUT http://example.com"
+            ],
+            "itemtype": "method",
+            "name": "Send HTTP PUT request",
+            "params": [
+                {
+                    "name": "resource",
+                    "description": "- target resource path or full URL",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 627,
+            "description": "Issue an HTTP DELETE request to default target or an absolute URL.\nThe @target annotation is used to select a target\n\n    I DELETE $resource",
+            "example": [
+                "\n\n    I DELETE /\n    I DELETE http://example.com"
+            ],
+            "itemtype": "method",
+            "name": "Send HTTP DELETE request",
+            "params": [
+                {
+                    "name": "resource",
+                    "description": "- target resource path or full URL",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 652,
+            "description": "Issue an HTTP PATCH request to default target or an absolute URL.\nThe @target annotation is used to select a target\n\n    I PATCH $resource",
+            "example": [
+                "\n\n    I PATCH /\n    I PATCH http://example.com"
+            ],
+            "itemtype": "method",
+            "name": "Send HTTP PATCH request",
+            "params": [
+                {
+                    "name": "resource",
+                    "description": "- target resource path or full URL",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 671,
+            "description": "Issue an HTTP HEAD request to default target or an absolute URL.\nThe @target annotation is used to select a target\n\n    I request HEAD for $resource",
+            "example": [
+                "\n\n    I request HEAD for /\n    I request HEAD for http://example.com"
+            ],
+            "itemtype": "method",
+            "name": "Send HTTP HEAD request",
+            "params": [
+                {
+                    "name": "resource",
+                    "description": "- target resource path or full URL",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 691,
+            "description": "Issue an HTTP POST request to default target or an absolute URL.\nThe @target annotation is used to select a target\n\n    I request OPTIONS for $resource",
+            "example": [
+                "\n\n    I request OPTIONS for /\n    I request OPTIONS for  http://example.com"
+            ],
+            "itemtype": "method",
+            "name": "Send request for HTTP OPTIONS",
+            "params": [
+                {
+                    "name": "resource",
+                    "description": "- target resource path or full URL",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 711,
+            "description": "Set an OAUTH access_token both as scoped variable for use in subsequent requests.\nThe $path parameter is a JSON path used to access the (non-standard) access_token from the current HTTP response.\n\n    I store body path $path as access token",
+            "example": [
+                "\n\n    I store body path $.access_token as access token"
+            ],
+            "itemtype": "method",
+            "name": "Set access_token",
+            "params": [
+                {
+                    "name": "token",
+                    "description": "- valid oauth access token",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 732,
+            "description": "Extra a value from the (JSON) body and store as a scoped variable\n\n    I store body path $path as $name",
+            "example": [
+                "\n\n    I store body path $.access_token as access-token"
+            ],
+            "itemtype": "method",
+            "name": "Extract variable from a JSON response",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "- JSON Path to extract variable",
+                    "type": "String"
+                },
+                {
+                    "name": "name",
+                    "description": "- scoped variable to store result",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 753,
+            "description": "Extract avalue from HTTP header and store as a scoped variable\n\n    I store header $header as $name",
+            "example": [
+                "\n\n    I store header ApiKey as client_id"
+            ],
+            "itemtype": "method",
+            "name": "Extract variable from an HTTP header",
+            "params": [
+                {
+                    "name": "header",
+                    "description": "- name of header to extract",
+                    "type": "String"
+                },
+                {
+                    "name": "name",
+                    "description": "- scoped variable to store result",
+                    "type": "String"
+                }
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-webapi/lib/dialect/webapi.js",
+            "line": 773,
+            "description": "Generate a TOTP token based on the shared secret and current time.",
+            "example": [
+                "\n\n    I use totp\n"
+            ],
+            "class": "Web API",
+            "module": "Web API Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/events.js",
+            "line": 28,
+            "description": "Broadcast Event to interested parties\n\n     I emit $event",
+            "itemtype": "method",
+            "name": "Emit Event",
+            "class": "Events",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/transform.js",
+            "line": 45,
+            "description": "Transform some variable using a Javascript function",
+            "example": [
+                "\n\n     When I transform something with:\n         this.transformed = this.transformed?this.transformed+1:1;\n     THEN something.transformed should be true"
+            ],
+            "itemtype": "method",
+            "name": "Transform a variable using Javascript",
+            "params": [
+                {
+                    "name": "varname",
+                    "description": "- variable to transform",
+                    "type": "String"
+                },
+                {
+                    "name": "javascript",
+                    "description": "- inline javascript",
+                    "type": "String"
+                }
+            ],
+            "class": "Transform",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 31,
+            "description": "Remove all the scoped variables\n\n     I clear variables\n\n     I reset variables",
+            "example": [
+                "\n\n     GIVEN I reset variables"
+            ],
+            "itemtype": "method",
+            "name": "Clear Variables",
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 50,
+            "description": "Set the value of a scoped variable\n\n     I set $varname to $value\n\n     I set $varname = $value\n\n     I define $varname = $value\n\n     I define $varname is $value",
+            "example": [
+                "\n\n     GIVEN I set hello to world\n     AND I set yes to true\n     AND I set nope to false\n     AND I set answer to 42"
+            ],
+            "itemtype": "method",
+            "name": "Set Variable",
+            "params": [
+                {
+                    "name": "variable",
+                    "description": "- variable name",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "- simple value (string | number | boolean)",
+                    "type": "Object"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 104,
+            "description": "Sets the value of a scoped variable to inline CSV data structure\n\n     I set $varname to CSV:\n     -------------\n     $CSV\n     -------------\n\n     some $varname as CSV:\n     -------------\n     $CSV\n     -------------",
+            "example": [
+                "\n\n     GIVEN I set my-csv to CSV:\n     -------------\n     hello, goodbye\n     world, earth\n     -------------\n\n or:\n\n     AND some CSV as my-csv:\n     -------------\n     hello, goodbye\n     world, earth\n     -------------"
+            ],
+            "itemtype": "method",
+            "name": "Set Variable from CSV",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "- variable name",
+                    "type": "String"
+                },
+                {
+                    "name": "CSV",
+                    "description": "- inline CSV text",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 144,
+            "description": "Sets the value of a scoped variable to inline JSON data structure\n---------- ---------- ---------- ----------",
+            "example": [
+                "\n\n     GIVEN I set $varname to JSON:\n     -------------\n     { \"hello\": \"world\" }\n     -------------\n\n or:\n\n     AND some JSON as $varname:\n     -------------\n     { \"hello\": \"world\" }\n     -------------"
+            ],
+            "itemtype": "method",
+            "name": "Set Variable from JSON",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "- variable name",
+                    "type": "String"
+                },
+                {
+                    "name": "JSON",
+                    "description": "- inline JSON",
+                    "type": "Object"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 178,
+            "description": "Run Javscript and save result into a variable",
+            "example": [
+                "\n\n     GIVEN I return 2+3 as my-answer\n\n     AND I return new Date().getTime() as now"
+            ],
+            "itemtype": "method",
+            "name": "Save Javascript to Variable",
+            "params": [
+                {
+                    "name": "javascript",
+                    "description": "- inline javascript",
+                    "type": "String"
+                },
+                {
+                    "name": "varname",
+                    "description": "- variable name",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 199,
+            "description": "Execute Javascript - trigger a fail if return is falsey",
+            "example": [
+                "\n\n     WHEN I execute (3+4)"
+            ],
+            "itemtype": "method",
+            "name": "Execute Javascript",
+            "params": [
+                {
+                    "name": "javascript",
+                    "description": "- inline javascript",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 219,
+            "description": "Assert some Javascript returns true or trigger a fail if return is 'falsey'",
+            "example": [
+                "\n\n     GIVEN I am testing\n     THEN I assert this.name == \"testing\""
+            ],
+            "itemtype": "method",
+            "name": "Assert Javascript",
+            "params": [
+                {
+                    "name": "javascript",
+                    "description": "- inline javascript",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 239,
+            "description": "Assert some variable is assigned a value that is truthy\n\n     variable $varname should exist",
+            "example": [
+                "\n\n     GIVEN I set variable hello to world\n     THEN variable hello should exist"
+            ],
+            "itemtype": "method",
+            "name": "Assert variable is truthy",
+            "params": [
+                {
+                    "name": "varname",
+                    "description": "- scoped variable",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 261,
+            "description": "Assert some variable should match an exact value\n\n\n     variable $varname should be $value\n     $varname should be $value\n     $varname equals $value\n     $varname is $value\n     $varname = $value",
+            "example": [
+                "\n\n     GIVEN I set variable hello to world\n     THEN variable hello should exist"
+            ],
+            "itemtype": "method",
+            "name": "Assert variable matches a value exactly",
+            "params": [
+                {
+                    "name": "varname",
+                    "description": "- scoped variable",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "- expected value",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 291,
+            "description": "Assert some variable should contain a value\n\n\n     variable $varname should contain $value",
+            "example": [
+                "\n\n     GIVEN I set variable hello to world\n     THEN variable hello should contain orl"
+            ],
+            "itemtype": "method",
+            "name": "Assert variable value contains some string",
+            "params": [
+                {
+                    "name": "varname",
+                    "description": "- scoped variable",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "- expected value",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 314,
+            "description": "Assert some variable should match a regular expression (RegExp)\n\n\n     variable $varname should match $regex",
+            "example": [
+                "\n\n     GIVEN I set variable hello to world\n     THEN variable hello should match a-z"
+            ],
+            "itemtype": "method",
+            "name": "Assert variable matches RegExp",
+            "params": [
+                {
+                    "name": "varname",
+                    "description": "- scoped variable",
+                    "type": "String"
+                },
+                {
+                    "name": "regex",
+                    "description": "- regular expression",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 338,
+            "description": "Assert some JSON path should match a regular expression (RegExp)\n\n\n     variable $varname should match $regex",
+            "example": [
+                "\n\n     GIVEN I set variable hello to world\n     THEN variable hello should match a-z"
+            ],
+            "itemtype": "method",
+            "name": "Assert variable matches RegExp",
+            "params": [
+                {
+                    "name": "varname",
+                    "description": "- scoped variable",
+                    "type": "String"
+                },
+                {
+                    "name": "regex",
+                    "description": "- regular expression",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 363,
+            "description": "Assert some JSON path within a complex variable should match a regular expression (RegExp)\n\n\n     $.hello in $varname should match $regex",
+            "example": [
+                "\n\n     GIVEN I set variable my.hello to world\n     THEN $.hello in my should match a-z"
+            ],
+            "itemtype": "method",
+            "name": "Assert JSON path matches RegExp",
+            "params": [
+                {
+                    "name": "path-",
+                    "description": "JSON path",
+                    "type": "String"
+                },
+                {
+                    "name": "varname",
+                    "description": "- scoped variable",
+                    "type": "String"
+                },
+                {
+                    "name": "regex",
+                    "description": "- regular expression",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        },
+        {
+            "file": "node_modules/meta4qa-common/lib/dialect/variables.js",
+            "line": 393,
+            "description": "Assert that any array element in JSON path within a variable should match a regular expression (RegExp)\n\n\n     $.hello in $varname should match $regex",
+            "example": [
+                "\n\n     GIVEN I set variable my.hello to world\n     THEN any $.hello in my should match a-z"
+            ],
+            "itemtype": "method",
+            "name": "Assert JSON path matches RegExp",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "- a valid JSON path",
+                    "type": "String"
+                },
+                {
+                    "name": "varname",
+                    "description": "- scoped variable",
+                    "type": "String"
+                },
+                {
+                    "name": "regex",
+                    "description": "- regular expression",
+                    "type": "String"
+                }
+            ],
+            "class": "Variables",
+            "module": "Default Dialect"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: api",
+            "line": " lib/reporters/Simple.js:9"
+        },
+        {
+            "message": "unknown tag: api",
+            "line": " lib/reporters/Simple.js:73"
+        },
+        {
+            "message": "Missing item type",
+            "line": " lib/helpers/http.js:237"
+        },
+        {
+            "message": "Missing item type\nInitialize a new `JSON` reporter.",
+            "line": " lib/reporters/Simple.js:9"
+        },
+        {
+            "message": "Missing item type\nReturn a plain-object representation of `test`\nfree of cyclic properties etc.",
+            "line": " lib/reporters/Simple.js:73"
+        },
+        {
+            "message": "Missing item type\nmeta4qa\n\nCommand Line launcher\n\n(c) Troven Software 2009-2015. Apache Licensed.",
+            "line": " lib/meta4qa.js:3"
+        },
+        {
+            "message": "Missing item type\nGenerate a TOTP token based on the shared secret and current time.",
+            "line": " node_modules/meta4qa-webapi/lib/dialect/webapi.js:773"
+        }
+    ]
+}

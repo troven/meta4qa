@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Variables - meta4qa</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/img/logo.png" title="meta4qa" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>Dialect Definitions for: 1.2.1</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Phrases</a></li>
+                            <li><a href="#api-modules">Dialects</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Builder.html">Builder</a></li>
+                                <li><a href="../classes/Common.html">Common</a></li>
+                                <li><a href="../classes/Events.html">Events</a></li>
+                                <li><a href="../classes/File System.html">File System</a></li>
+                                <li><a href="../classes/TCP Toolkit.html">TCP Toolkit</a></li>
+                                <li><a href="../classes/Transform.html">Transform</a></li>
+                                <li><a href="../classes/Variables.html">Variables</a></li>
+                                <li><a href="../classes/Web API.html">Web API</a></li>
+                                <li><a href="../classes/X.509 Server Certificates.html">X.509 Server Certificates</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/Default Dialect.html">Default Dialect</a></li>
+                                <li><a href="../modules/Web API Dialect.html">Web API Dialect</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Variables Phrases</h1>
+<div class="box meta">
+
+
+        <div class="foundat">
+            Defined in: <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l14"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:14</code></a>
+        </div>
+
+            Dialect: <a href="../modules/Default Dialect.html">Default Dialect</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Variables
+Configures the Gherkin parser with phrases that support operations on variables</p>
+
+</div>
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                            <li class="index-item method">
+                                <a href="#method_Assert Javascript">Assert Javascript</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Assert JSON path matches RegExp">Assert JSON path matches RegExp</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Assert JSON path matches RegExp">Assert JSON path matches RegExp</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Assert variable is truthy">Assert variable is truthy</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Assert variable matches a value exactly">Assert variable matches a value exactly</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Assert variable matches RegExp">Assert variable matches RegExp</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Assert variable matches RegExp">Assert variable matches RegExp</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Assert variable value contains some string">Assert variable value contains some string</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Clear Variables">Clear Variables</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Execute Javascript">Execute Javascript</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Save Javascript to Variable">Save Javascript to Variable</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set Variable">Set Variable</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set Variable from CSV">Set Variable from CSV</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_Set Variable from JSON">Set Variable from JSON</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method_Assert Javascript" class="method item">
+    <h3 class="name"><code>Assert Javascript</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>javascript</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l219"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:219</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Assert some Javascript returns true or trigger a fail if return is 'falsey'</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">javascript</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>inline javascript</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I am testing
+ THEN I assert this.name == &quot;testing&quot;</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Assert JSON path matches RegExp" class="method item">
+    <h3 class="name"><code>Assert JSON path matches RegExp</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>path</code>
+                </li>
+                <li class="arg">
+                        <code>varname</code>
+                </li>
+                <li class="arg">
+                        <code>regex</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l393"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:393</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Assert that any array element in JSON path within a variable should match a regular expression (RegExp)</p>
+<pre class="code prettyprint"><code> $.hello in $varname should match $regex</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">path</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>a valid JSON path</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">varname</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>scoped variable</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">regex</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>regular expression</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I set variable my.hello to world
+ THEN any $.hello in my should match a-z</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Assert JSON path matches RegExp" class="method item">
+    <h3 class="name"><code>Assert JSON path matches RegExp</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>path-</code>
+                </li>
+                <li class="arg">
+                        <code>varname</code>
+                </li>
+                <li class="arg">
+                        <code>regex</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l363"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:363</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Assert some JSON path within a complex variable should match a regular expression (RegExp)</p>
+<pre class="code prettyprint"><code> $.hello in $varname should match $regex</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">path-</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>JSON path</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">varname</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>scoped variable</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">regex</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>regular expression</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I set variable my.hello to world
+ THEN $.hello in my should match a-z</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Assert variable is truthy" class="method item">
+    <h3 class="name"><code>Assert variable is truthy</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>varname</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l239"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:239</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Assert some variable is assigned a value that is truthy</p>
+<pre class="code prettyprint"><code> variable $varname should exist</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">varname</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>scoped variable</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I set variable hello to world
+ THEN variable hello should exist</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Assert variable matches a value exactly" class="method item">
+    <h3 class="name"><code>Assert variable matches a value exactly</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>varname</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l261"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:261</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Assert some variable should match an exact value</p>
+<pre class="code prettyprint"><code> variable $varname should be $value
+ $varname should be $value
+ $varname equals $value
+ $varname is $value
+ $varname = $value</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">varname</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>scoped variable</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>expected value</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I set variable hello to world
+ THEN variable hello should exist</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Assert variable matches RegExp" class="method item">
+    <h3 class="name"><code>Assert variable matches RegExp</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>varname</code>
+                </li>
+                <li class="arg">
+                        <code>regex</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l314"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:314</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Assert some variable should match a regular expression (RegExp)</p>
+<pre class="code prettyprint"><code> variable $varname should match $regex</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">varname</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>scoped variable</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">regex</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>regular expression</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I set variable hello to world
+ THEN variable hello should match a-z</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Assert variable matches RegExp" class="method item">
+    <h3 class="name"><code>Assert variable matches RegExp</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>varname</code>
+                </li>
+                <li class="arg">
+                        <code>regex</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l338"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:338</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Assert some JSON path should match a regular expression (RegExp)</p>
+<pre class="code prettyprint"><code> variable $varname should match $regex</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">varname</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>scoped variable</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">regex</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>regular expression</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I set variable hello to world
+ THEN variable hello should match a-z</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Assert variable value contains some string" class="method item">
+    <h3 class="name"><code>Assert variable value contains some string</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>varname</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l291"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:291</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Assert some variable should contain a value</p>
+<pre class="code prettyprint"><code> variable $varname should contain $value</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">varname</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>scoped variable</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>expected value</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I set variable hello to world
+ THEN variable hello should contain orl</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Clear Variables" class="method item">
+    <h3 class="name"><code>Clear Variables</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l31"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:31</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Remove all the scoped variables</p>
+<pre class="code prettyprint"><code> I clear variables
+
+ I reset variables</code></pre>
+
+    </div>
+
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I reset variables</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Execute Javascript" class="method item">
+    <h3 class="name"><code>Execute Javascript</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>javascript</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l199"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:199</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Execute Javascript - trigger a fail if return is falsey</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">javascript</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>inline javascript</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> WHEN I execute (3+4)</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Save Javascript to Variable" class="method item">
+    <h3 class="name"><code>Save Javascript to Variable</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>javascript</code>
+                </li>
+                <li class="arg">
+                        <code>varname</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l178"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:178</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Run Javscript and save result into a variable</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">javascript</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>inline javascript</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">varname</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>variable name</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I return 2+3 as my-answer
+
+ AND I return new Date().getTime() as now</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set Variable" class="method item">
+    <h3 class="name"><code>Set Variable</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>variable</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l50"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:50</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Set the value of a scoped variable</p>
+<pre class="code prettyprint"><code> I set $varname to $value
+
+ I set $varname = $value
+
+ I define $varname = $value
+
+ I define $varname is $value</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">variable</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>variable name</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>simple value (string | number | boolean)</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I set hello to world
+ AND I set yes to true
+ AND I set nope to false
+ AND I set answer to 42</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set Variable from CSV" class="method item">
+    <h3 class="name"><code>Set Variable from CSV</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+                <li class="arg">
+                        <code>CSV</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l104"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:104</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets the value of a scoped variable to inline CSV data structure</p>
+<pre class="code prettyprint"><code> I set $varname to CSV:
+ -------------
+ $CSV
+ -------------
+
+ some $varname as CSV:
+ -------------
+ $CSV
+ -------------</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>variable name</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">CSV</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>inline CSV text</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I set my-csv to CSV:
+ -------------
+ hello, goodbye
+ world, earth
+ -------------
+</code></pre>
+<p>or:</p>
+<pre class="code prettyprint"><code> AND some CSV as my-csv:
+ -------------
+ hello, goodbye
+ world, earth
+ -------------</code></pre>
+
+            </div>
+        </div>
+</div>
+<div id="method_Set Variable from JSON" class="method item">
+    <h3 class="name"><code>Set Variable from JSON</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+                <li class="arg">
+                        <code>JSON</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/node_modules_meta4qa-common_lib_dialect_variables.js.html#l144"><code>node_modules&#x2F;meta4qa-common&#x2F;lib&#x2F;dialect&#x2F;variables.js:144</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets the value of a scoped variable to inline JSON data structure</p>
+<hr>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>variable name</li>
+</ul>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">JSON</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <ul>
+<li>inline JSON</li>
+</ul>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="example">
+            <h4>Example:</h4>
+
+            <div class="example-content">
+                <pre class="code prettyprint"><code> GIVEN I set $varname to JSON:
+ -------------
+ { &quot;hello&quot;: &quot;world&quot; }
+ -------------
+</code></pre>
+<p>or:</p>
+<pre class="code prettyprint"><code> AND some JSON as $varname:
+ -------------
+ { &quot;hello&quot;: &quot;world&quot; }
+ -------------</code></pre>
+
+            </div>
+        </div>
+</div>
+            </div>
+
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
