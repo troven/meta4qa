@@ -1,0 +1,21 @@
+{
+	"paths": {
+		"files": "./features/files",
+		"docs": "./docs",
+		"blueprints": "./blueprints",
+		"target": "./target"
+	},
+	"vars": {
+		"bonjour": "monde"
+	},
+	"targets": {
+		"google": {
+			"protocol": "https",
+			"hostname": "google.com"
+		},
+		"default": {
+			"protocol": "https",
+			"hostname": "example.com"
+		}
+	}
+}
