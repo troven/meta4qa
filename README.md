@@ -1,4 +1,4 @@
-![meta4qa](docs/favicon.png) ![CI](https://travis-ci.org/meta4qa/meta4qa.svg?branch=master) ![version](https://img.shields.io/github/release/meta4qa/meta4qa.svg?maxAge=2592000) ![dependencies](https://img.shields.io/david/meta4qa/meta4qa.svg?maxAge=2592000) ![meta4qas](https://img.shields.io/badge/meta4qas-are%20awesome-800080.svg)
+![meta4qa](docs/favicon.png) ![CI](https://travis-ci.org/troven/meta4qa.svg?branch=master) ![version](https://img.shields.io/github/release/troven/meta4qa.svg?maxAge=2592000) ![dependencies](https://img.shields.io/david/troven/meta4qa.svg?maxAge=2592000) 
 
 BDD / Gherkin Governance tool for QA engineers
 =================================
@@ -305,7 +305,7 @@ I want to license meta4qa
 
 This software is licensed under the Apache 2 license, quoted below.
 
-Copyright 2015-2016 Lee Curtis & Troven 2009-2015
+Copyright Troven 2009-2016
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not
 use this file except in compliance with the License. You may obtain a copy of
