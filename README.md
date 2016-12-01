@@ -296,7 +296,7 @@ Then meta4qa can re-use those blueprints to build customised websites, portals, 
 
 Please share any custom Blueprints and Dialects so that meta4qa becomes more useful for all of us.
 
-If you need support to build or debug your community Blueprints or Dialects, please ask@meta4qa.me
+If you need support to build or debug your community Blueprints or Dialects, please ask@meta4qashield.com
 
 
 
