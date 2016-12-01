@@ -19,33 +19,31 @@
   "dependencies": {
     "JSONPath": "^0.11.2",
     "async": "^2.0.1",
-    "chai": "^3.5.0",
     "commander": "^2.9.0",
     "csvtojson": "^0.5.14",
     "debug": "^2.3.3",
+    "diet-yadda": "^0.22.0",
     "handlebars": "^4.0.5",
     "js-sha256": "^0.3.2",
     "js-yaml": "^3.6.1",
     "lodash": "^4.17.2",
     "mkdirp": "^0.5.1",
-    "mocha": "^2.5.3",
+    "mocha": "^3.2.0",
     "ms": "^0.7.2",
     "net": "^1.0.2",
     "promise": "^7.1.1",
     "request": "^2.72.0",
-    "underscore": "^1.8.3",
     "winston": "^2.2.0",
     "winston-logsene": "^1.2.0",
     "xmldom": "^0.1.22",
-    "xpath": "0.0.23",
-    "yadda": "^0.17.9",
-    "yaml": "^0.3.0"
+    "xpath": "0.0.23"
   },
   "bin": {},
-  "devDependencies": {
+  "peerDependencies": {
     "meta4qa-common": "^1.9.0",
-    "meta4qa-files": "^1.9.0",
-    "meta4qa-webapi": "^1.9.0",
+    "meta4qa-webapi": "^1.9.0"
+  },
+  "ignore-devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-yuidoc": "^1.0.0"
