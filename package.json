@@ -1,6 +1,6 @@
 {
   "name": "meta4qa",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "A QA robot for software projects using BDD/Gherkin",
   "main": "lib/index.js",
   "scripts": {
