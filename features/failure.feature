@@ -1,3 +1,4 @@
+@bail=true
 Feature: A Broken Example
 
   Scenario: Trivial Failure
