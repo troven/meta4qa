@@ -1,6 +1,6 @@
 {
   "name": "meta4qa",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "description": "A QA robot for software projects using BDD/Gherkin",
   "main": "lib/index.js",
   "scripts": {
@@ -39,7 +39,7 @@
     "xpath": "0.0.23"
   },
   "bin": {
-	  "qa": "lib/index.js"
+    "qa": "lib/index.js"
   },
   "peerDependencies": {},
   "ignore-devDependencies": {
