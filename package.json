@@ -38,7 +38,9 @@
     "xmldom": "^0.1.22",
     "xpath": "0.0.23"
   },
-  "bin": {},
+  "bin": {
+	  "qa": "lib/index.js"
+  },
   "peerDependencies": {},
   "ignore-devDependencies": {
     "grunt": "^1.0.1",
