@@ -1,0 +1,15 @@
+{
+	"vars": {
+		"bonjour": "monde"
+	},
+	"targets": {
+		"google": {
+			"protocol": "https",
+			"hostname": "google.com"
+		},
+		"example": {
+			"protocol": "https",
+			"hostname": "example.com"
+		}
+	}
+}

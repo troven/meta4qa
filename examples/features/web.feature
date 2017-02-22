@@ -11,7 +11,6 @@ Background: Google Scenarios
     When I GET /
     Then response code should be 200
 
-@skip
 @target=google
   Scenario: Google - no redirect
 
@@ -20,7 +19,6 @@ Background: Google Scenarios
     Then response code should be 3xx
 
 
-@skip
 @target=example
   Scenario: Example.com
 
