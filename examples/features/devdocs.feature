@@ -5,5 +5,5 @@ Feature: Dev Documentation
     Given I am Example Features
     And I find .feature in folder ../ as files
     And I delete docs folder examples
-    And I build test-plan as ../docs/examples
+    And I build devdocs as docs/examples
     Then docs file examples/index.html should exist

@@ -1,5 +1,5 @@
 Feature: Build an example website
-  As a geek I want to be automated so I can be l33t
+  As a geek I want to be automated so I can be 1337
 
   Scenario: Example Blueprint
 
